@@ -22,7 +22,7 @@
         <li><p>Контекстная <a href="https://www.kubsu.ru/">ссылка в тексте абзаца</a>.</p></li>
         <li><a href="https://externalsite.com#section">Ссылка на фрагмент страницы стороннего сайта</a></li>
         <li>
-            <img src="https://via.placeholder.com/300" usemap="#map">
+            <img src="https://via.placeholder.com/300" usemap="#map" alt="">
             <map name="map">
                 <area shape="rect" coords="34,44,270,350" href="https://www.kubsu.ru/ru/university/departments" alt="Прямоугольная область">
                 <area shape="circle" coords="200,200,50" href="https://www.kubsu.ru/ru/fktipm" alt="Круглая область">
@@ -32,12 +32,12 @@
         <li><a>Ссылка без href</a></li>
         <li><a rel="nofollow" href="https://www.kubsu.ru/">Ссылка, по которой запрещен переход поисковикам</a></li>
         <li><a rel="noindex" href="https://www.kubsu.ru/">Запрещенная для индексации поисковиками ссылка</a></li>
-        <ol>
+        <ul>
             <li><a href="https://www.kubsu.ru/ru/university/departments" title="Описание страницы 1">Страница 1</a></li>
             <li><a href="https://www.kubsu.ru/ru/fktipm" title="Описание страницы 2">Страница 2</a></li>
             <li><a href="https://example.com/page3" title="Описание страницы 3">Страница 3</a></li>
-        </ol>
-        <p><a href="ftp://username:password@ftp.example.com/file.txt">FTP-ссылка с авторизацией</a></p>
+        </ul>
+        <a href="ftp://username:password@ftp.example.com/file.txt">FTP-ссылка с авторизацией</a>
     </ul>
     <form>
         <div>
@@ -74,7 +74,7 @@
 
         <div>
             <label for="select">Выберите ваш любимый язык программирования:</label>
-            <select id = "select" name = "field-name-4[]" width=300 style="width: 350px"
+            <select id = "select" name = "field-name-4[]"  style="width: 350px"
                 size="8" multiple>
 
                 <option value="moscow">Pascal</option>
