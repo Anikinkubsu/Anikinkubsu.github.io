@@ -9,7 +9,7 @@
     <ul>
         <li><a href="http://kubsu.ru">Главная страница сайта kubsu.ru</a></li>
         <li><a href="https://kubsu.ru">Главная сайта kubsu.ru в протоколе HTTPS</a></li>
-        <li><a href="https://img.goodfon.ru/original/1680x1050/6/30/kot-kotenok-vzglyad.jpg"><img src="https://example.com/image.jpg" alt="Ссылка-изображение" /></a></li>
+        <li><a href="https://img.goodfon.ru/original/1680x1050/6/30/kot-kotenok-vzglyad.jpg"><img style ="width: 200px; height: 200px;" src="cat.jpg" alt="Ссылка-изображение" /></a></li>
         <li><a href="/page">Сокращенная ссылка на внутреннюю страницу</a></li>
         <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
         <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
@@ -22,7 +22,7 @@
         <li><p>Контекстная <a href="https://www.kubsu.ru/">ссылка в тексте абзаца</a>.</p></li>
         <li><a href="https://externalsite.com#section">Ссылка на фрагмент страницы стороннего сайта</a></li>
         <li>
-            <img src="Noname.png" width="300" height="300" usemap="#map" alt="">
+            <img src="noname.png" width="300" height="300" usemap="#map" alt="">
             <map name="map">
                 <area shape="rect" coords="0,0,150,200" href="https://www.kubsu.ru/ru/university/departments" alt="Прямоугольная область">
                 <area shape="circle" coords="150,0,300" href="https://www.kubsu.ru/ru/fktipm" alt="Круглая область">
@@ -35,7 +35,7 @@
       
             <li><a href="https://www.kubsu.ru/ru/university/departments" title="Описание страницы 1">Страница 1</a></li>
             <li><a href="https://www.kubsu.ru/ru/fktipm" title="Описание страницы 2">Страница 2</a></li>
-            <li><a href="https://example.com/page3" title="Описание страницы 3">Страница 3</a></li>
+            <li><a href="https://boykobroker.ru/login" title="Описание страницы 3">Страница 3</a></li>
         </ul>
         <a href="ftp://username:password@ftp.example.com/file.txt">FTP-ссылка с авторизацией</a>
    
@@ -76,7 +76,7 @@
             <label for="select">Выберите ваш любимый язык программирования:</label>
            <select
 						id="programming-language"
-						name="programming__language"
+						name="programming__language[]"
 						multiple
 						required
 					>
@@ -91,8 +91,9 @@
 						<option value="haskell">Haskell</option>
 						<option value="clojure">Clojure</option>
 						<option value="prolog">Prolog</option>
-						<option value="scala">Scala</option></select
-            </select>
+						<option value="scala">Scala</option>
+                    </select>
+            
         </div>
 
         <div>
